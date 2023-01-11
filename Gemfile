@@ -16,6 +16,10 @@ gem 'bootstrap-sass', '3.3.6'
 
 gem 'sassc-rails'
 
+gem 'jquery-rails'
+
+gem 'jquery-ui-rails'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
