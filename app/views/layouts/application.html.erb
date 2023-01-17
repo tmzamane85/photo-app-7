@@ -41,9 +41,9 @@
 
             <li class="col-md-8 user-name">
 
-            <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
+              <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
 
-            edit_user_registration_path, title: 'Edit Profile' %>
+                                                          edit_user_registration_path, title: 'Edit Profile' %>
 
             </li>
 
@@ -51,13 +51,13 @@
 
             <li class="col-md-3 logout"><%= link_to('Logout', destroy_user_session_path,
 
-            class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
+                                            class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
 
             <% else %>
 
             <li class="col-md-4 pull-right">
 
-            <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
+              <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
 
             </li>
 
